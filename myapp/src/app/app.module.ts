@@ -7,13 +7,15 @@ import {Courses} from './courses';
 import {TaskComponent} from './task.component';
 import { ParentComponent } from './parent.component';
 import { ChildComponent } from './child.component';
+import { PropertyComponent } from './property.component';
 @NgModule({
   declarations: [
     AppComponent,
     CourseComponent,
     TaskComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    PropertyComponent
   ],
   imports: [
     BrowserModule
