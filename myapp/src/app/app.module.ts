@@ -8,6 +8,9 @@ import {TaskComponent} from './task.component';
 import { ParentComponent } from './parent.component';
 import { ChildComponent } from './child.component';
 import { PropertyComponent } from './property.component';
+import { HeartComponent } from './heartlike.component';
+import { CurrentUsersComponent } from './currentUser.component';
+import { StoreUsersComponent } from './storeUsers.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +18,10 @@ import { PropertyComponent } from './property.component';
     TaskComponent,
     ParentComponent,
     ChildComponent,
-    PropertyComponent
+    PropertyComponent,
+    HeartComponent,
+    CurrentUsersComponent,
+    StoreUsersComponent
   ],
   imports: [
     BrowserModule
