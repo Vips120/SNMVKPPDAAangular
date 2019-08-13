@@ -11,6 +11,9 @@ import { PropertyComponent } from './property.component';
 import { HeartComponent } from './heartlike.component';
 import { CurrentUsersComponent } from './currentUser.component';
 import { StoreUsersComponent } from './storeUsers.component';
+import { UserComponent } from './user.component';
+import { ContentPipe } from './content.pipes';
+import { CustomDirective } from './custom.directives';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +24,10 @@ import { StoreUsersComponent } from './storeUsers.component';
     PropertyComponent,
     HeartComponent,
     CurrentUsersComponent,
-    StoreUsersComponent
+    StoreUsersComponent,
+    UserComponent,
+    ContentPipe,
+    CustomDirective
   ],
   imports: [
     BrowserModule
