@@ -12,12 +12,12 @@ import {Component} from '@angular/core';
     </ul>
     <hr/>
     <p>{{para | content:'25'}}</p>
-    <img src="{{imgUrl}}"/>
+    <img src="{{imgUrl | imgHttp:'http://lorempixel.com/400/200/' : false}}"/>
     `
 })
 
 export class UserComponent {
-    public imgUrl:string = 'https://lorempixel.com/400/200/';
+    public imgUrl:string = '';
     public para:string = 'Indias biggest online store for Mobiles, Fashion (Clothes/Shoes), Electronics, Home Appliances, Books, Jewelry, Home, Furniture, Sporting goods, Beauty';
     public userDetails = {
               name: 'Ricky Rich',

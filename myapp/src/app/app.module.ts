@@ -14,6 +14,11 @@ import { StoreUsersComponent } from './storeUsers.component';
 import { UserComponent } from './user.component';
 import { ContentPipe } from './content.pipes';
 import { CustomDirective } from './custom.directives';
+import { Imgpipe } from './img.pipes';
+import { TemplateFormComponent } from './template-form/template-form.component';
+import { XyzPipe } from './xyz.pipe';
+import {FormsModule , ReactiveFormsModule} from '@angular/forms';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,10 +32,16 @@ import { CustomDirective } from './custom.directives';
     StoreUsersComponent,
     UserComponent,
     ContentPipe,
-    CustomDirective
+    CustomDirective,
+    Imgpipe,
+    TemplateFormComponent,
+    XyzPipe,
+    ReactiveformComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [Courses],
   bootstrap: [AppComponent]
