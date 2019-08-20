@@ -19,6 +19,14 @@ import { TemplateFormComponent } from './template-form/template-form.component';
 import { XyzPipe } from './xyz.pipe';
 import {FormsModule , ReactiveFormsModule} from '@angular/forms';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import {RouterModule} from '@angular/router';
+import {routes} from './app.routes';
+import { About1Component } from './about1/about1.component';
+import { About2Component } from './about2/about2.component';
+import { ProductComponent } from './product/product.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,12 +44,19 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
     Imgpipe,
     TemplateFormComponent,
     XyzPipe,
-    ReactiveformComponent
+    ReactiveformComponent,
+    NavigationComponent,
+    HomeComponent,
+    AboutComponent,
+    About1Component,
+    About2Component,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [Courses],
   bootstrap: [AppComponent]
