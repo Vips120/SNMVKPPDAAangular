@@ -4,7 +4,12 @@ import { AboutComponent } from './about/about.component';
 import { About1Component } from './about1/about1.component';
 import { About2Component } from './about2/about2.component';
 import { ProductComponent } from './product/product.component';
-export const routes:Route[] = [{
+export const routes:Route[] = [
+    {
+        path:'',
+        component:HomeComponent
+    },
+    {
     path:'home',
     component:HomeComponent
 },
@@ -24,5 +29,9 @@ export const routes:Route[] = [{
 {
     path:'product/:id',
     component:ProductComponent
+},
+{
+    path:'contact',
+    loadChildren:'./contact/contact.module#ContactModule'
 }
 ]

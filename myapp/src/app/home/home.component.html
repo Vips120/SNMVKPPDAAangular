@@ -1,2 +1,17 @@
 <p>home works!</p>
-<app-reactiveform></app-reactiveform>
+<div class="form-group">
+    <input type="search" class="form-control" id="search" placeholder="enter anything"/>
+</div>
+<!-- <app-reactiveform></app-reactiveform> -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let data of userData">
+            <div class="card border-danger">
+              <div class="card-body">
+                <h4 class="card-title">{{data.id}}</h4>
+                <p class="card-text">{{data.body}}</p>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
