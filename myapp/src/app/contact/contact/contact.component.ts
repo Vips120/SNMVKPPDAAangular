@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class ContactComponent implements OnInit {
 public Login: FormGroup;
+public validateError:string;
 public submitted:boolean = false;
   constructor(private fb:FormBuilder, private userServices: UserRegisterServices, private router:Router) { }
 
@@ -27,9 +28,14 @@ public submitted:boolean = false;
     console.log(data);
     this.userServices.userLogin(data)
     .subscribe(data => {
+      if(data.UserIdentity){
       alert('login Succesful');
       this.router.navigateByUrl('/home');
       console.log(data);
+    } else {
+      console.log(data.Error);
+ this.validateError = data.Error;
+    }
     })
   }
 }
